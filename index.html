@@ -3,11 +3,20 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title></title>
+
+  <!-- Push Responder Begin-->
   <link rel="manifest" href="manifest.json">
+  <script>
+    window.PushResponder = {};
+    window.PushResponder.params = {
+      timeout: 2000,
+      message: 'Blah blah'
+    }
+  </script>
+  <script src="load_manager.js"></script>
+  <!-- Push Responder End-->
 </head>
 <body>
-<h1>Service Worker Test</h1>
-<button id="subscribe">Click to Subscribe</button>
+
 </body>
-<script src="app/javascript/index.js"></script>
 </html>
